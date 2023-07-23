@@ -34,7 +34,7 @@ export class App extends Component {
     const totalFeedback = this.countTotalFeedback();
     const positivePercentage = this.countPositiveFeedbackPercentage();
 
-    const types = ['good', 'neutral', 'bad'];
+    const types = Object.keys(this.state);
 
     return (
       <AppPart>
